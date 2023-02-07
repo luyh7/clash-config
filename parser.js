@@ -4,7 +4,7 @@ module.exports.parse = async (
   { name, url, interval, selected }
 ) => {
   const url_provider =
-    "https://gist.github.com/luyh7/23bb56a6abe4757231a6b838c02ef8ad/raw/d6afc5ff93f74e701b61620a85417f2af1a1e61f/parsers.yaml";
+    "https://github.com/luyh7/clash-config/blob/main/parser.yaml?raw=true";
   let {
     headers: { "subscription-userinfo": si = "" } = {},
     status,
