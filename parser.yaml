@@ -1,0 +1,31 @@
+yaml:
+  prepend-rules:
+    - DOMAIN-SUFFIX,hanime.tv,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-SUFFIX,naver.com,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-SUFFIX,netflix.com,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-SUFFIX,recaptcha.net,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-KEYWORD,pornhub,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-KEYWORD,discord,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-KEYWORD,openai,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-KEYWORD,reddit,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-SUFFIX,gamer.com.tw,魔戒.net # rules最前面增加一个规则
+    - DOMAIN-KEYWORD,youtube,魔戒.net # rules最前面增加一个规则
+    - PROCESS-NAME,python.exe,Python
+    - PROCESS-NAME,Thunder.exe,Thunder
+  append-proxy-groups:
+    - name: Python
+      type: select
+      proxies:
+        - 魔戒.net
+        - 亚洲节点
+        - 优化节点
+        - 国际节点
+        - DIRECT
+    - name: Thunder
+      type: select
+      proxies:
+        - 魔戒.net
+        - 亚洲节点
+        - 优化节点
+        - 国际节点
+        - DIRECT
