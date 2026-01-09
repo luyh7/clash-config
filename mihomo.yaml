@@ -1,3 +1,4 @@
 +rules:
   - DOMAIN-SUFFIX,milkywayidle.com,DIRECT
   - DOMAIN-SUFFIX,idle-journey.com,DIRECT
+  - DOMAIN-SUFFIX,weilingtech.com,DIRECT
